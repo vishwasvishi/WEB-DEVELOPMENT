@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Application Form</h1>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+            <td><label for="regno">Register NO:</label></td>
+            <td><input type="text" id="regno" name="regno" required></td>
+            <td><label for="studentname">Student Name:</label></td>
+            <td><input type="text" id="studentname" name="studentname" required></td>
+            </tr>
+            <tr>
+            <td><label for="fathername">Father Name:</label></td>
+            <td><input type="text" id="fathername" name="fathername" required></td> 
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+            <td><label for="mothername">Mother Name:</label></td>
+            <td><input type="text" id="mothername" name="mothername" required></td>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+            <td><label for="aadhaar">Aadhaar Number:</label></td>
+            <td><input type="text" id="aadhaar" name="aadhaar" required></td>
+            <td><label for="mobileno">Mobile Number:</label></td>
+            <td><input type="tel" id="mobileno" name="mobileno" required></td>
+            </tr>
+            <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+            </td>
+            </tr>
+            </table>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>Educational Information</legend>
+            <table border="1" cellpadding="5" cellspacing="5">
+                <tr>
+                    <th>Select Board</th>
+                    <th>Total Number</th>
+                    <th>Obtained Number</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td><label for="board">High School:</label>
+                    <select id="board" name="board" required>
+                        <option value="">Select Board</option>
+                        <option value="cbse">CBSE</option>
+                        <option value="icse">ICSE</option>
+                        <option value="state">State Board</option>
+                    </select></td>
+                    <td><input type="text" id="total" name="total" required></td>
+                    <td><input type="text" id="obtained" name="obtained"  required></td>
+                    <td><input type="text" id="percentage" name="percentage" required></td>
+                </tr>
+                <tr>
+                    <td><label for="board">Intermediate:</label>
+                    <select id="board" name="board" required>
+                        <option value="">Select Board</option>
+                        <option value="cbse">CBSE</option>
+                        <option value="icse">ICSE</option>
+                        <option value="state">State Board</option>
+                    </select></td>
+                    <td><input type="text" id="total" name="total" required></td>
+                    <td><input type="text" id="obtained" name="obtained"  required></td>
+                    <td><input type="text" id="percentage" name="percentage" required></td>
+                </tr>
+                <tr>
+                    <td><label for="board">Graduation:</label>
+                    <input type="text" id="board" name="board" placeholder="Enter University Name" required></td>
+                </td>
+                    <td><input type="text" id="total" name="total" required></td>
+                    <td><input type="text" id="obtained" name="obtained"  required></td>
+                    <td><input type="text" id="percentage" name="percentage" required></td>
+            </table>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Course Applied</legend>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="btech">B.Tech</option>
+                <option value="mtech">M.Tech</option>
+                <option value="mba">MBA</option>
+                <option value="msc">M.Sc</option>
+            </select><br><br>
+            <label for="branch">Choose <u>UG</u> Course Here:</label>
+            <input type="radio" id="branch" name="branch" value="bca">
+            <label for="branch">BCA</label>
+            <input type="radio" id="branch" name="branch" value="ba">
+            <label for="branch">BA</label>
+            <input type="radio" id="branch" name="branch" value="bcom">
+            <label for="branch">B.Com</label>
+            <input type="radio" id="branch" name="branch" value="bba">
+            <label for="branch">BBA</label>
+            <input type="radio" id="branch" name="branch" value="bsc">
+            <label for="branch">B.Sc</label><br><br>
+
+             <label for="branch">Choose <u>PG</u> Course Here:</label>
+            <input type="radio" id="branch" name="branch" value="Mca">
+            <label for="branch">MCA</label>
+            <input type="radio" id="branch" name="branch" value="LLM">
+            <label for="branch">LLM</label>
+            <input type="radio" id="branch" name="branch" value="Mcom">
+            <label for="branch">M.Com</label>
+            <input type="radio" id="branch" name="branch" value="Mba">
+            <label for="branch">MBA</label>
+            </fieldset>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label><br><br>
+            <button type="submit">Register</button>
+            <button type="reset">Clear</button>
+    </form>
+</body>
+</html>
