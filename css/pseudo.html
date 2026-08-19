@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal */
+        *{
+            font-family: tahoma;
+            background-color: #6703f2;
+        }
+        p::before{
+            content: "HI";
+            color: red;
+        }
+        .content::before{
+            content: "Hello";
+            color: blue;
+        }
+        p::selection{
+            background-color: rgb(98, 98, 97);
+            color: rgb(22, 1, 1);
+        }
+        li::marker{
+            color: green;
+            content: "->";
+        }
+        #title::first-letter{
+            color: red;
+            font-size: 50px;
+        }
+        .content::first-line{
+            background-color: rgb(218, 20, 218);
+            font-size: 20px;
+        }
+
+
+        </style>
+</head>
+<body>
+    <h1 id="title">Vishwas N</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla impedit esse unde eveniet nihil expedita maiores. Repudiandae minima tenetur vel praesentium hic, unde rerum nihil modi, omnis distinctio inventore autem!</p>
+    <p class="content"><strong class="str"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</strong> Est expedita possimus quam consectetur corporis, ullam aut sed dignissimos dolorum atque minus illo sint repellat explicabo. Asperiores ullam placeat vero, aut iste reprehenderit et, quis debitis ab ad minima impedit. Architecto a consectetur praesentium nobis quia tempora libero reiciendis officiis incidunt.</p>
+    <h2>My Name is Vishi</h2>
+    <ol>
+        <li>java</li>
+        <li>python</li>
+        <li>c++</li>
+        <li>c</li>
+        <li>mongo db</li>
+    </ol>
+</body>
+</html>
