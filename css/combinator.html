@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: elephant;
+            font-size:30px;
+            background-color: #5ce407;
+        }
+        section > p{
+            color: red;
+        }
+        aside p{
+            color: blue;
+        }
+        section + p{
+            color: rgb(11, 115, 235);
+        }
+        section ~ p{
+            color: orange;
+        }
+        section+p{
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <aside>
+            <p>aside paragraph 1</p>
+            <p>aside paragraph 2</p>
+        </aside>
+        <p>paragraph 3</p>
+    </section>
+       <p>paragraph 4</p>
+       <p>paragraph 5</p>
+</body>
+</html>
