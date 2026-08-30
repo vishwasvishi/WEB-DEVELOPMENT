@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 70px;
+            width: 100%;
+            background: linear-gradient(to right, #00c996, #003d4d);
+            display: flex;
+
+        }
+        .logo{
+            height: 70px;
+            flex-basis: 15%;
+            display: flex;
+            align-items: center;
+         
+            justify-content: center;
+
+        }
+        .logo img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+        .menu{
+            height: 70px;
+            flex-basis: 85%;
+            display: flex;
+            align-items: center;
+            
+            justify-content: space-evenly;
+        }
+        .menu a{
+            color: black;
+            text-decoration: none;
+        }
+        .menu a:hover{
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <aside class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzqpTG3NDKmmg98xpSRpuat0HaZIGYLFdTb7E4lBKJAQIrGxIXNMrHNUI&s=10" alt="">
+        </aside>
+        <aside class="menu">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">contact</a>
+            <a href="#">Register</a>
+            <a href="#">Login</a>
+        </aside>
+    </nav>
+</body>
+</html>
